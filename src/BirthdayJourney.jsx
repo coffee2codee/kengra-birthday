@@ -9,7 +9,7 @@ const VIDEO_SRC = '/bday.mp4';
 const NAV = [
   { id: 'page-0', label: 'hello', icon: '🌙' },
   { id: 'page-1', label: 'birthday', icon: '🎂' },
-  { id: 'page-2', label: 'tu', icon: '💫' },
+  { id: 'page-2', label: 'aap', icon: '💫' },
   { id: 'page-3', label: 'wishes', icon: '🎁' },
   { id: 'page-4', label: 'letter', icon: '💌' },
   { id: 'page-5', label: 'finally', icon: '⭐' },
