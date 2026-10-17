@@ -4,7 +4,7 @@ import confetti from 'canvas-confetti';
 
 // ---- Your two files go in the /public folder ----
 const SONG_SRC = '/song.mp3';
-const VIDEO_SRC = '/birthday.mp4';
+const VIDEO_SRC = '/bday.mp4';
 
 const NAV = [
   { id: 'page-0', label: 'hello', icon: '🌙' },
@@ -16,18 +16,19 @@ const NAV = [
 ];
 
 const WISH_NOTES = [
-  'Tu hamesha khush rahe, bas yahi chahti hoon. ⭐',
-  'Teri saari wishes poori hon, ek ek karke.',
+  'Aap hamesha khush rahein, bas yahi chahti hoon. ⭐',
+  'Aapki saari wishes poori hon, ek ek karke.',
   'Hamesha aise hi pagal aur cute rehna. Bilkul mat badalna. 🤭',
   'Life mein problems aayein toh aayein, bas apni smile mat khona.',
-  'Har buri nazar se Bhagwan tujhe bachaye. 🧿',
-  'Tu itna aage jaaye ki khud pe proud feel kare.',
-  'Apna dhyaan rakha kar, samjha? Khana time pe khaana, aur sona bhi.',
-  'Kabhi mat sochna ki tu akela hai. Main hoon na. 🫶',
+  'Har buri nazar se Bhagwan aapko bachaye. 🧿',
+  'Aap itna aage jaao ki khud pe proud feel karo.',
+  'Apna dhyaan rakha karo, samjha? Khana time pe khaana, aur sona bhi.',
+  'Kabhi mat sochna ki aap akele ho. Main hoon na. 🫶',
+  'Mumma is always with you, mere Kengra betu. 💛',
 ];
 
 const FINAL_NOTE =
-  'Jar mein sirf thode se wishes hain, kyunki jitne maine tere liye maange hain wo sab likhti toh poori website lag jaati. 🤭';
+  'Jar mein sirf thode se wishes hain, kyunki jitne maine aapki liye maange hain wo sab likhti toh poori website lag jaati. 🤭';
 
 export default function KengraBirthday() {
   const [currentPage, setCurrentPage] = useState('page-0');
@@ -205,7 +206,7 @@ export default function KengraBirthday() {
                 Kuch khaas hai mere Kengra betu ke liye ⭐
               </h1>
               <p className="font-hand text-2xl text-[#C9D0FF] mb-8">
-                Aaja, tere liye banaya hai ♡
+                Aaja, aap ke liye banaya hai ♡
               </p>
               <button onClick={startApp} className={`${btnPrimary} text-base sm:text-lg flex items-center gap-2`}>
                 <span>surprise kholo</span>
@@ -219,7 +220,7 @@ export default function KengraBirthday() {
         {currentPage === 'page-1' && (
           <section className="w-full flex flex-col items-center text-center pb-24">
             <div className="inline-block bg-[#F6C453]/15 border border-[#F6C453]/40 px-4 py-1.5 rounded-full text-xs font-semibold text-[#FFE9A8] mb-4">
-              ✨ aaj ka din sirf tera hai ✨
+              ✨ aaj ka din sirf aapka hai ✨
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-bold font-title text-[#F6C453] glow mb-8 leading-tight">
@@ -248,10 +249,10 @@ export default function KengraBirthday() {
 
             <div className="mt-8 max-w-lg space-y-2">
               <p className="font-title text-xl sm:text-2xl font-semibold text-[#FFE9A8]">
-                Aaj sirf tere baare mein hai sab kuch 🥹
+                Aaj sirf aapke baare mein hai sab kuch 🥹
               </p>
               <p className="font-hand text-2xl text-[#C9D0FF]">
-                toh yeh chhota sa kona poora tere naam, mere Kengra betu.
+                toh yeh chhota sa kona poora aapke naam, mere Kengra betu.
               </p>
             </div>
 
@@ -267,20 +268,20 @@ export default function KengraBirthday() {
         {currentPage === 'page-2' && (
           <section className="w-full flex flex-col items-center text-center pb-24">
             <h2 className="text-3xl sm:text-4xl font-bold font-title text-[#F6C453] glow mb-8">
-              Tu mere liye kya hai ♡
+              Aap mere liye kya hai ♡
             </h2>
 
             <div className={`${card} p-6 sm:p-8 max-w-xl space-y-4 mb-8`}>
               <p className="font-hand text-3xl font-bold text-[#F6C453]">
-                “Pata hai, tu mere liye kitna special hai.” 🥹
+                “Pata hai, aap mere liye kitne special ho.” 🥹
               </p>
               <p className="text-base sm:text-lg leading-relaxed text-[#FFF6E0]/90">
-                Kabhi kabhi lagta hai ki main tujhe ye bata hi nahi paati. Tu bas hai, aur wahi kaafi hai
-                mere liye. Tera pagalpan, teri cuteness, teri chhoti chhoti baatein, sab kuch.
+                Kabhi kabhi lagta hai ki main aapko ye bata hi nahi paati. Aap bas hai, aur wahi kaafi hai
+                mere liye. Aapka pagalpan, aapki cuteness, aapki chhoti chhoti baatein, sab kuch.
               </p>
               <p className="text-base sm:text-lg leading-relaxed text-[#FFF6E0]/90">
                 Isliye socha ki is baar kuch alag banau. Kuch jahan main apne dil ki saari baatein
-                ek jagah likh sakun, aur tu jab chahe wapas aake padh sake.
+                ek jagah likh sakun, aur aap jab chahe wapas aake padh sake.
               </p>
               <div className="pt-2">
                 <span className="inline-block bg-[#F6C453]/15 text-[#FFE9A8] font-bold px-4 py-2 rounded-full text-sm sm:text-base border border-[#F6C453]/40">
@@ -305,7 +306,7 @@ export default function KengraBirthday() {
                   <div className="space-y-2">
                     <span className="text-2xl">✨</span>
                     <p className="font-hand text-2xl text-[#FFE9A8] leading-snug">
-                      “Chahe tu kitna bhi bada ho jaaye, mere liye tu hamesha mera Kengra betu hi rahega.”
+                      “Chahe aap kitne bhi bada ho jaaye, mere liye aap hamesha mera Kengra betu hi rahenge.”
                     </p>
                     <span className="text-xs">⭐</span>
                   </div>
@@ -326,7 +327,7 @@ export default function KengraBirthday() {
             <h2 className="text-2xl sm:text-3xl font-bold font-title text-[#F6C453] glow mb-2 max-w-lg">
               Website se gift wrap karke toh bhej nahi sakti, isliye ye bana diya 🎁
             </h2>
-            <p className="font-hand text-2xl text-[#C9D0FF] mb-6">Ek wish nikaal ♡</p>
+            <p className="font-hand text-2xl text-[#C9D0FF] mb-6">Ek wish nikaalo  ♡</p>
 
             <div className="relative my-4 flex flex-col items-center">
               <div
@@ -390,23 +391,23 @@ export default function KengraBirthday() {
                 <div className="font-hand text-2xl sm:text-3xl space-y-5 leading-relaxed">
                   <p className="text-3xl sm:text-4xl font-bold text-[#b8860b]">Mere Kengra betu,</p>
                   <p>
-                    Pata hai, tu mere liye kitna special hai. Tujhe hamesha khush dekhna, tujhe life mein
-                    aage badhte dekhna aur teri saari wishes poori hote dekhna, bas yahi chahti hoon. Tu
+                    Pata hai, aap mere liye kitne special ho. Aapko hamesha khush dekhna, aapko life mein
+                    aage badhte dekhna aur aapki saari wishes poori hote dekhna, bas yahi chahti hoon. Aap
                     hamesha aise hi pagal, cute aur khush rehna. Life mein kitni bhi problems aayein, bas
                     kabhi apni smile mat khona.
                   </p>
                   <p>
-                    Bhagwan tujhe duniya ki saari khushiyan de, har buri nazar se bachaye aur tujhe har woh
-                    cheez mile jo tera dil chahta hai. Tu life mein bahut aage jaaye aur hamesha apne liye
+                    Bhagwan aapko duniya ki saari khushiyan de, har buri nazar se bachaye aur aapko har woh
+                    cheez mile jo aapka dil chahta hai. Aap life mein bahut aage jaaye aur hamesha apne liye
                     proud feel kare.
                   </p>
                   <p className="font-bold text-[#8a6508]">
-                    Aur haan, chahe tu kitna bhi bada ho jaaye, mere liye tu hamesha mera Kengra betu hi
-                    rahega.
+                    Aur haan, chahe aap kitne bhi bada ho jaaye, mere liye aap hamesha mera Kengra betu hi
+                    rahenge.
                   </p>
                   <p>
-                    Apna dhyaan rakha kar, khush raha kar aur kabhi bhi yeh mat sochna ki tu akela hai.
-                    Meri best wishes aur blessings hamesha tere saath hain.
+                    Apna dhyaan rakha karo, khush raha karo aur kabhi bhi yeh mat sochna ki aap akele ho.
+                    Meri best wishes aur blessings hamesha aapke saath hain.
                   </p>
                   <div className="text-right pt-4">
                     <span className="text-3xl sm:text-4xl text-[#b8860b] block">
@@ -436,7 +437,7 @@ export default function KengraBirthday() {
 
               <div className="space-y-4 text-[#FFF6E0]/90 text-base sm:text-lg max-w-md">
                 <p>
-                  I hope tera yeh saal tere liye bahut saari happiness, love, success aur beautiful
+                  I hope aapka yeh saal aapke liye bahut saari happiness, love, success aur beautiful
                   memories lekar aaye.
                 </p>
                 <p className="text-xl sm:text-2xl font-bold text-[#FFE9A8] font-title pt-2">
@@ -446,7 +447,7 @@ export default function KengraBirthday() {
 
               <div className="mt-8 pt-6 border-t border-white/20 w-full space-y-2">
                 <p className="font-hand text-2xl text-[#C9D0FF]">
-                  Tu jaisa hai, waisa hi rehna. Bas yahi chahiye. ⭐
+                  Aap jaise ho, waise hi rehna. Bas yahi chahiye. ⭐
                 </p>
                 <p className="text-sm font-bold text-[#F6C453] tracking-wide">
                   Happy Birthday, Kengra betu 🎂
@@ -478,7 +479,7 @@ export default function KengraBirthday() {
           </button>
 
           <div className="flex flex-col pr-2 overflow-hidden">
-            <span className="text-[10px] sm:text-xs font-bold text-[#FFE9A8] truncate">Tere liye 🎵</span>
+            <span className="text-[10px] sm:text-xs font-bold text-[#FFE9A8] truncate">Aapke liye 🎵</span>
             <div className="flex items-center gap-1">
               <button onClick={toggleAudio} className="text-[#FFE9A8] hover:text-white">
                 {isPlaying ? <Pause size={14} /> : <Play size={14} />}
